@@ -6463,7 +6463,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="VCC2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="U$1" library="SparkFun-Connectors" deviceset="M10X2" device="ROUND_NOSILK" value="20 pin breakout"/>
+<part name="U$1" library="SparkFun-Connectors" deviceset="M10X2" device="ROUND_NOSILK"/>
 <part name="P+26" library="supply1" deviceset="VCC" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="J21" library="SparkFun-Connectors" deviceset="M03" device="JST-PTH-VERT" value="led"/>
