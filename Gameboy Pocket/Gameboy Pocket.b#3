@@ -2829,7 +2829,6 @@ design rules under a new name.</description>
 <contactref element="BTN-Y" pad="1"/>
 <contactref element="BTN-X" pad="1"/>
 <wire x1="37.16" y1="37.38" x2="39.88" y2="35.73" width="0" layer="19" extent="1-16"/>
-<wire x1="57.39" y1="44.54" x2="61.635" y2="44.12" width="0" layer="19" extent="1-16"/>
 <wire x1="52.07" y1="50.67" x2="56.29" y2="52.34" width="0" layer="19" extent="1-16"/>
 <wire x1="46.99" y1="51.22" x2="49.53" y2="51.22" width="0" layer="19" extent="16-16"/>
 <wire x1="41.36" y1="43.98" x2="39.88" y2="39.54" width="0" layer="19" extent="1-16"/>
@@ -3037,22 +3036,20 @@ design rules under a new name.</description>
 <contactref element="U$2" pad="31"/>
 <contactref element="BTN-A" pad="2"/>
 <wire x1="29.76" y1="45.58" x2="24" y2="45.58" width="0.254" layer="16"/>
-<via x="24" y="51" extent="1-16" drill="0.6"/>
-<wire x1="24" y1="51" x2="67" y2="51" width="0.254" layer="1"/>
+<via x="24" y="52" extent="1-16" drill="0.6"/>
+<wire x1="24" y1="52" x2="67" y2="52" width="0.254" layer="1"/>
 <wire x1="67" y1="26.46" x2="65.39" y2="26.46" width="0.254" layer="1"/>
-<wire x1="24" y1="45.58" x2="24" y2="51" width="0.254" layer="16"/>
-<wire x1="67" y1="51" x2="67" y2="26.46" width="0.254" layer="1"/>
+<wire x1="24" y1="45.58" x2="24" y2="52" width="0.254" layer="16"/>
+<wire x1="67" y1="52" x2="67" y2="26.46" width="0.254" layer="1"/>
 </signal>
 <signal name="D13/B">
 <contactref element="U$2" pad="32"/>
 <contactref element="BTN-B" pad="2"/>
 <wire x1="29.76" y1="46.38" x2="26" y2="46.38" width="0.254" layer="16"/>
-<via x="26" y="50" extent="1-16" drill="0.6"/>
-<wire x1="26" y1="50" x2="59.5" y2="50" width="0.254" layer="1"/>
-<wire x1="59.5" y1="50" x2="59.5" y2="26.5" width="0.254" layer="1"/>
-<wire x1="59.5" y1="26.5" x2="51.055" y2="26.5" width="0.254" layer="1"/>
-<wire x1="51.055" y1="26.5" x2="51.055" y2="26.54" width="0.254" layer="1"/>
+<wire x1="26" y1="51" x2="26" y2="50" width="0" layer="19" extent="1-16"/>
+<wire x1="26" y1="50" x2="49.5" y2="48" width="0" layer="19" extent="1-16"/>
 <wire x1="26" y1="46.38" x2="26" y2="50" width="0.254" layer="16"/>
+<wire x1="49.5" y1="48" x2="51.055" y2="26.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="D10/X">
 <contactref element="U$2" pad="30"/>
@@ -3273,16 +3270,16 @@ design rules under a new name.</description>
 <approved hash="19,1,eac755d931be5adb"/>
 <approved hash="19,1,3df4c877cdfe4287"/>
 <approved hash="19,1,437107fb5bf3e082"/>
-<approved hash="19,1,ff3d141f47f4ccac"/>
-<approved hash="19,1,b4b3c09a67f027a1"/>
-<approved hash="19,1,664c6d1d59f426df"/>
 <approved hash="19,1,281f103b41f819a6"/>
 <approved hash="19,1,6391c4be61fcf2ab"/>
 <approved hash="19,1,b16e69395ff8f3d5"/>
-<approved hash="19,1,d8084191d522d640"/>
-<approved hash="19,1,868f8e6d6320b447"/>
+<approved hash="19,1,ff3d141f47f4ccac"/>
+<approved hash="19,1,b4b3c09a67f027a1"/>
+<approved hash="19,1,664c6d1d59f426df"/>
 <approved hash="19,1,050e4995dd5e0b3e"/>
 <approved hash="19,1,5b8986696b5c6939"/>
+<approved hash="19,1,d8084191d522d640"/>
+<approved hash="19,1,868f8e6d6320b447"/>
 <approved hash="19,1,33862cdbcfbaf09d"/>
 <approved hash="19,1,f83958582fbe5ba2"/>
 <approved hash="19,1,4ab175d971ba1aa8"/>
@@ -3303,11 +3300,11 @@ design rules under a new name.</description>
 <approved hash="19,1,40554b8214f274dd"/>
 <approved hash="19,1,8d354a8c735b9215"/>
 <approved hash="19,1,33a38710fd54fc02"/>
-<approved hash="19,1,352c05afde26c55f"/>
-<approved hash="19,1,bbab502c703a7d58"/>
 <approved hash="19,1,834269526522d34a"/>
 <approved hash="19,1,36cf1fd07c25c147"/>
 <approved hash="19,1,5a5266575520a158"/>
+<approved hash="19,1,352c05afde26c55f"/>
+<approved hash="19,1,bbab502c703a7d58"/>
 <approved hash="19,1,05f086b31eb5d582"/>
 <approved hash="19,1,7275b23e2eabda87"/>
 <approved hash="19,1,bcee0fbd4cb7439d"/>
