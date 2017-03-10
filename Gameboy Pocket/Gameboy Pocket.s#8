@@ -11600,6 +11600,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="R6" library="adafruit" deviceset="R-US_" device="R0805" value="10k"/>
 <part name="V4" library="supply2" deviceset="+5V" device=""/>
+<part name="GND8" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11691,6 +11692,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <instance part="GND7" gate="1" x="198.12" y="76.2" rot="MR90"/>
 <instance part="R6" gate="G$1" x="213.36" y="81.28" rot="R270"/>
 <instance part="V4" gate="+5V" x="213.36" y="88.9"/>
+<instance part="GND8" gate="1" x="7.62" y="160.02" rot="MR90"/>
 </instances>
 <busses>
 </busses>
@@ -11769,6 +11771,34 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <segment>
 <pinref part="S1" gate="G$1" pin="1"/>
 <pinref part="GND7" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="DIR-L" gate="G$1" pin="1"/>
+<pinref part="DIR-D" gate="G$1" pin="1"/>
+<wire x1="73.66" y1="160.02" x2="55.88" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="DIR-U" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="160.02" x2="38.1" y2="160.02" width="0.1524" layer="91"/>
+<junction x="55.88" y="160.02"/>
+<pinref part="DIR-R" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="160.02" x2="20.32" y2="160.02" width="0.1524" layer="91"/>
+<junction x="38.1" y="160.02"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="20.32" y1="160.02" x2="10.16" y2="160.02" width="0.1524" layer="91"/>
+<junction x="20.32" y="160.02"/>
+<pinref part="BTN-START" gate="G$1" pin="1"/>
+<pinref part="BTN-SELECT" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="119.38" x2="20.32" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="119.38" x2="10.16" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="119.38" x2="10.16" y2="160.02" width="0.1524" layer="91"/>
+<junction x="20.32" y="119.38"/>
+<junction x="10.16" y="160.02"/>
+<pinref part="BTN-A" gate="G$1" pin="1"/>
+<pinref part="BTN-B" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="86.36" x2="20.32" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="86.36" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="86.36" x2="10.16" y2="119.38" width="0.1524" layer="91"/>
+<junction x="20.32" y="86.36"/>
+<junction x="10.16" y="119.38"/>
 </segment>
 </net>
 <net name="A" class="0">
@@ -12009,60 +12039,35 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <label x="271.78" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="A5/START" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="PF0(ADC0)"/>
-<wire x1="327.66" y1="172.72" x2="332.74" y2="172.72" width="0.1524" layer="91"/>
-<label x="358.14" y="171.704" size="1.4224" layer="95"/>
-</segment>
+<net name="START" class="0">
 <segment>
 <pinref part="BTN-START" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="134.62" x2="38.1" y2="137.16" width="0.1524" layer="91"/>
 <label x="38.1" y="139.7" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="A4/SELECT" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="PF1(ADC1)"/>
-<wire x1="327.66" y1="175.26" x2="332.74" y2="175.26" width="0.1524" layer="91"/>
-<label x="358.14" y="174.244" size="1.4224" layer="95"/>
-</segment>
+<net name="SELECT" class="0">
 <segment>
 <pinref part="BTN-SELECT" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="134.62" x2="20.32" y2="137.16" width="0.1524" layer="91"/>
 <label x="20.32" y="139.7" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="A3/DOWN" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="PF4(ADC4)"/>
-<wire x1="327.66" y1="177.8" x2="332.74" y2="177.8" width="0.1524" layer="91"/>
-<label x="358.14" y="176.784" size="1.4224" layer="95"/>
-</segment>
+<net name="DOWN" class="0">
 <segment>
 <pinref part="DIR-D" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="175.26" x2="55.88" y2="177.8" width="0.1524" layer="91"/>
 <label x="55.88" y="180.34" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="A2/RIGHT" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="PF5(ADC5)"/>
-<wire x1="327.66" y1="180.34" x2="332.74" y2="180.34" width="0.1524" layer="91"/>
-<label x="358.14" y="179.324" size="1.4224" layer="95"/>
-</segment>
+<net name="RIGHT" class="0">
 <segment>
 <pinref part="DIR-R" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="175.26" x2="20.32" y2="177.8" width="0.1524" layer="91"/>
 <label x="20.32" y="180.34" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="A0/UP" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="PF7(ADC7)"/>
-<wire x1="327.66" y1="185.42" x2="332.74" y2="185.42" width="0.1524" layer="91"/>
-<label x="358.14" y="184.404" size="1.4224" layer="95"/>
-</segment>
+<net name="UP" class="0">
 <segment>
 <pinref part="DIR-U" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="175.26" x2="38.1" y2="177.8" width="0.1524" layer="91"/>
@@ -12175,12 +12180,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <pinref part="LEDTX" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="A1/LEFT" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="PF6(ADC6)"/>
-<wire x1="327.66" y1="182.88" x2="332.74" y2="182.88" width="0.1524" layer="91"/>
-<label x="358.14" y="181.864" size="1.4224" layer="95"/>
-</segment>
+<net name="LEFT" class="0">
 <segment>
 <pinref part="DIR-L" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="175.26" x2="73.66" y2="177.8" width="0.1524" layer="91"/>
@@ -12206,6 +12206,48 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="U$2" gate="G$1" pin="UCAP"/>
 <wire x1="287.02" y1="157.48" x2="292.1" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="A0" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="PF7(ADC7)"/>
+<wire x1="327.66" y1="185.42" x2="332.74" y2="185.42" width="0.1524" layer="91"/>
+<label x="358.14" y="184.404" size="1.4224" layer="95"/>
+</segment>
+</net>
+<net name="A1" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="PF6(ADC6)"/>
+<wire x1="327.66" y1="182.88" x2="332.74" y2="182.88" width="0.1524" layer="91"/>
+<label x="358.14" y="181.864" size="1.4224" layer="95"/>
+</segment>
+</net>
+<net name="A2" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="PF5(ADC5)"/>
+<wire x1="327.66" y1="180.34" x2="332.74" y2="180.34" width="0.1524" layer="91"/>
+<label x="358.14" y="179.324" size="1.4224" layer="95"/>
+</segment>
+</net>
+<net name="A3" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="PF4(ADC4)"/>
+<wire x1="327.66" y1="177.8" x2="332.74" y2="177.8" width="0.1524" layer="91"/>
+<label x="358.14" y="176.784" size="1.4224" layer="95"/>
+</segment>
+</net>
+<net name="A4" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="PF1(ADC1)"/>
+<wire x1="327.66" y1="175.26" x2="332.74" y2="175.26" width="0.1524" layer="91"/>
+<label x="358.14" y="174.244" size="1.4224" layer="95"/>
+</segment>
+</net>
+<net name="A5" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="PF0(ADC0)"/>
+<wire x1="327.66" y1="172.72" x2="332.74" y2="172.72" width="0.1524" layer="91"/>
+<label x="358.14" y="171.704" size="1.4224" layer="95"/>
 </segment>
 </net>
 </nets>

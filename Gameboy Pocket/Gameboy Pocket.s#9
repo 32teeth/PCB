@@ -11596,7 +11596,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="J3" library="SparkFun-Connectors" deviceset="M02" device="JST-PTH-VERT" value="battery"/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-PTH-6.0MM"/>
+<part name="S1" library="SparkFun-Switches" deviceset="MOMENTARY-SWITCH-SPST" device="-SMD-5.2MM" value="MOMENTARY-SWITCH-SPST-SMD-5.2MM"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="R6" library="adafruit" deviceset="R-US_" device="R0805" value="10k"/>
 <part name="V4" library="supply2" deviceset="+5V" device=""/>
