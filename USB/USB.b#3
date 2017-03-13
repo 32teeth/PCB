@@ -640,13 +640,15 @@ design rules under a new name.</description>
 <wire x1="12" y1="25.6" x2="12" y2="30" width="0.254" layer="1"/>
 <wire x1="12" y1="30" x2="15.35" y2="30" width="0.254" layer="1"/>
 <wire x1="15.35" y1="30" x2="15.35" y2="31" width="0.254" layer="1"/>
-<wire x1="19.6" y1="21" x2="19.6" y2="22" width="0.254" layer="1"/>
+<wire x1="19.6" y1="22" x2="19.6" y2="21" width="0.254" layer="1"/>
 <wire x1="19.6" y1="22" x2="19" y2="22" width="0.254" layer="1"/>
 <wire x1="19" y1="22" x2="19" y2="23.15" width="0.254" layer="1"/>
+<wire x1="19.6" y1="21" x2="19.6" y2="12.5" width="0.254" layer="1"/>
+<wire x1="14.712" y1="12.5" x2="19.6" y2="12.5" width="0.254" layer="1"/>
+<wire x1="15.35" y1="16" x2="15.35" y2="12.5" width="0.254" layer="1"/>
+<wire x1="15.35" y1="12.5" x2="14.712" y2="12.5" width="0.254" layer="1"/>
 <wire x1="15.35" y1="31" x2="14.712" y2="42.5" width="0" layer="19" extent="1-1"/>
 <wire x1="19" y1="23.15" x2="12" y2="25.6" width="0" layer="19" extent="1-1"/>
-<wire x1="15.35" y1="16" x2="19.6" y2="21" width="0" layer="19" extent="1-1"/>
-<wire x1="14.712" y1="12.5" x2="15.35" y2="16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="U1" pad="5"/>
@@ -687,11 +689,11 @@ design rules under a new name.</description>
 <contactref element="U1" pad="1"/>
 <contactref element="CN1" pad="D+"/>
 <via x="21" y="8" extent="1-16" drill="0.6"/>
-<via x="21" y="13" extent="1-16" drill="0.6"/>
-<wire x1="21" y1="13" x2="21" y2="23.25" width="0.254" layer="1"/>
+<via x="21" y="12" extent="1-16" drill="0.6"/>
+<wire x1="21" y1="12" x2="21" y2="23.25" width="0.254" layer="1"/>
 <wire x1="21" y1="23.25" x2="19.6" y2="23.25" width="0.254" layer="1"/>
 <wire x1="14.712" y1="8" x2="21" y2="8" width="0.254" layer="1"/>
-<wire x1="21" y1="8" x2="21" y2="13" width="0.254" layer="16"/>
+<wire x1="21" y1="8" x2="21" y2="12" width="0.254" layer="16"/>
 </signal>
 <signal name="N$4">
 <contactref element="U1" pad="3"/>
