@@ -3715,7 +3715,6 @@ MISO</text>
 <text x="28.5" y="36" size="0.8128" layer="21" font="vector" ratio="15" distance="200" rot="R90" align="center-right">GND
 MOSI
 VCC</text>
-<text x="23.5" y="40.75" size="0.8128" layer="21" font="vector" ratio="20" rot="R180" align="center">Power</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
